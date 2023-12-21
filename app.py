@@ -5,7 +5,7 @@ def convert_text(text):
     formatted_text = text.replace('\n', '<br/>').replace('\"', '\\"')
     return formatted_text
 
-st.title("new lines to `<br/>`")
+st.title("text to json format")
 
 with st.form(key='my_form', border=False):
     input_text = st.text_area("Input Text", height=300)
