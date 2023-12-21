@@ -2,7 +2,8 @@ import streamlit as st
 
 def convert_text(text):
     # Replace each new line or empty line with <br/>
-    return text.replace('\n', '<br/>')
+    formatted_text = text.replace('\n', '<br/>').replace('\"', '\\"')
+    return formatted_text
 
 st.title("new lines to `<br/>`")
 
